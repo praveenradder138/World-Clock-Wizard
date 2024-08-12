@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Multi Timezone Clock",
+    "version": "1.0",
+    "description": "Shows time in up to four different time zones",
+    "permissions": ["storage"],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    }
+   
+  }

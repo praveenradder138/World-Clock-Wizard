@@ -1,15 +1,14 @@
 {
-  "manifest_version": 2,
-  "name": "Multi Timezone Clock",
+  "manifest_version": 3,
+  "name": "World Clock Wizard",
   "version": "1.1",
-  "description": "Shows time in up to four different time zones",
+  "description": "Shows time in up to four different time zones . The selected timezones will be persisted for further use .",
   "permissions": ["storage"],
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "service_worker": "background.js"
   }
  
 }
